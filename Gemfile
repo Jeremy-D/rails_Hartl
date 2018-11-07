@@ -22,6 +22,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'bcrypt'
 #faker for making made up accounts
 gem 'faker', '~> 1.9.1'
+#Image Uploads
+gem 'carrierwave'
+gem 'mini_magick'
 #Use will_paginate for pagination
 gem 'will_paginate', '~> 3.1.0'
 gem 'bootstrap-will_paginate', '~> 1.0.0'
@@ -77,6 +80,7 @@ end
 
 group :production do
   gem 'pg', '0.18.4'
+  gem 'fog'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
